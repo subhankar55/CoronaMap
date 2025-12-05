@@ -7,12 +7,11 @@ function updateMap(){
             latitude = element.latitude;
             longitude = element.longitude;
             cases = element.infected;
-            let color;
-            if(cases > 255){
-                color = "rgb(255,0,0)";
-            }else{
-                color = `rgb(${cases},0,0)`;
-            }
+            let brightness = ((cases) / 12);
+            if(brightness > 80) brightness = 80;
+            if(brightness < 20) brightness = 20;
+            brightness = 100 - brightness;
+            let color = `hsl(0,80%,${brightness}%)`;
             // create a marker at a coordinate
             new mapboxgl.Marker({
                 draggable: false,
