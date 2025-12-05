@@ -1,0 +1,26 @@
+{
+  "name": "coronamap",
+  "version": "1.0.0",
+  "description": "This project will show corona cases update in map",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhankar55/CoronaMap.git"
+  },
+  "author": "subhankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subhankar55/CoronaMap/issues"
+  },
+  "homepage": "https://github.com/subhankar55/CoronaMap#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
